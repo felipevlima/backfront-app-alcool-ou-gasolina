@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		E3D271152934F01800602A93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D271142934F01800602A93 /* AppDelegate.swift */; };
 		E3D271172934F01800602A93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D271162934F01800602A93 /* SceneDelegate.swift */; };
-		E3D271192934F01800602A93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D271182934F01800602A93 /* ViewController.swift */; };
-		E3D2711C2934F01800602A93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D2711A2934F01800602A93 /* Main.storyboard */; };
+		E3D271192934F01800602A93 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D271182934F01800602A93 /* HomeViewController.swift */; };
 		E3D2711E2934F01B00602A93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3D2711D2934F01B00602A93 /* Assets.xcassets */; };
 		E3D271212934F01B00602A93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D2711F2934F01B00602A93 /* LaunchScreen.storyboard */; };
+		E3D2712B2934F2E500602A93 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2712A2934F2E500602A93 /* HomeScreen.swift */; };
+		E3D2712E2934FFC000602A93 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D2712D2934FFC000602A93 /* CalculatorViewController.swift */; };
+		E3D271312935001400602A93 /* CalculatorScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3D271302935001400602A93 /* CalculatorScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E3D271112934F01800602A93 /* AppAlcoolOuGasolina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppAlcoolOuGasolina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D271142934F01800602A93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E3D271162934F01800602A93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E3D271182934F01800602A93 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3D2711B2934F01800602A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3D271182934F01800602A93 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E3D2711D2934F01B00602A93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3D271202934F01B00602A93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3D271222934F01B00602A93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3D2712A2934F2E500602A93 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		E3D2712D2934FFC000602A93 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		E3D271302935001400602A93 /* CalculatorScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		E3D271132934F01800602A93 /* AppAlcoolOuGasolina */ = {
 			isa = PBXGroup;
 			children = (
+				E3D2712C2934FFA900602A93 /* Calculator */,
+				E3D271282934F2C600602A93 /* Home */,
 				E3D271142934F01800602A93 /* AppDelegate.swift */,
 				E3D271162934F01800602A93 /* SceneDelegate.swift */,
-				E3D271182934F01800602A93 /* ViewController.swift */,
-				E3D2711A2934F01800602A93 /* Main.storyboard */,
 				E3D2711D2934F01B00602A93 /* Assets.xcassets */,
 				E3D2711F2934F01B00602A93 /* LaunchScreen.storyboard */,
 				E3D271222934F01B00602A93 /* Info.plist */,
 			);
 			path = AppAlcoolOuGasolina;
+			sourceTree = "<group>";
+		};
+		E3D271282934F2C600602A93 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E3D271292934F2D200602A93 /* Screen */,
+				E3D271182934F01800602A93 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E3D271292934F2D200602A93 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2712A2934F2E500602A93 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		E3D2712C2934FFA900602A93 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				E3D2712F2935000400602A93 /* Screen */,
+				E3D2712D2934FFC000602A93 /* CalculatorViewController.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		E3D2712F2935000400602A93 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E3D271302935001400602A93 /* CalculatorScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +165,6 @@
 			files = (
 				E3D271212934F01B00602A93 /* LaunchScreen.storyboard in Resources */,
 				E3D2711E2934F01B00602A93 /* Assets.xcassets in Resources */,
-				E3D2711C2934F01800602A93 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +175,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3D271192934F01800602A93 /* ViewController.swift in Sources */,
+				E3D2712E2934FFC000602A93 /* CalculatorViewController.swift in Sources */,
+				E3D2712B2934F2E500602A93 /* HomeScreen.swift in Sources */,
+				E3D271192934F01800602A93 /* HomeViewController.swift in Sources */,
 				E3D271152934F01800602A93 /* AppDelegate.swift in Sources */,
 				E3D271172934F01800602A93 /* SceneDelegate.swift in Sources */,
+				E3D271312935001400602A93 /* CalculatorScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E3D2711A2934F01800602A93 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3D2711B2934F01800602A93 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E3D2711F2934F01B00602A93 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +323,7 @@
 				INFOPLIST_FILE = AppAlcoolOuGasolina/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,9 +333,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.testeapp.AppAlcoolOuGasolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,7 +353,7 @@
 				INFOPLIST_FILE = AppAlcoolOuGasolina/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,9 +363,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.testeapp.AppAlcoolOuGasolina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
